@@ -15,6 +15,8 @@ md = pd.read_csv(metadata_filepath+'metadata.csv', dtype={'sourceID':str})
 
 comid_id= []
 
+# Go through metadata and fetch COMIDs
+
 for i, row in md.iterrows():
     try:
         comid_closest = nldi.comid_byloc((row['longitude_wgs84'], 
@@ -30,9 +32,9 @@ for i, row in md.iterrows():
     
 comid_df = pd.concat([x for x in comid_id if x is not None], ignore_index=True)
 
-
-
+# downloading Value-Added Attributes (VAAs)
 vaa = nhd.nhdplus_vaa()
 comid_df['comid'] = comid_df['comid'].astype(int)
 comid_df = comid_df.merge(vaa[['comid', 'pathlength']], on='comid', how='left')
+
 comid_df.to_csv(INPUT_filepath+'00_ancillary_data/geomorph_data/nhdplus_pathlength.csv')
