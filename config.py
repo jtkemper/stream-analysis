@@ -7,6 +7,7 @@ metadata_filepath = INPUT_filepath+"01_metadata/"
 shapefile_filepath = INPUT_filepath+'03_shapefiles/'
 water_quality_filepath = INPUT_filepath + "02_waterquality_timeseries/"
 discharge_filepath = INPUT_filepath + "08_streamflow_discharge/"
+landuse_filepath = INPUT_filepath + "06_dynamic_lulc/"
 OUTPUT_filepath = "../OUTPUT/"
 
 params_pretty_dict = {'WTemp_C':'Temp',
