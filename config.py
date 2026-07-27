@@ -25,3 +25,11 @@ params_pretty_dict = {'WTemp_C':'Temp',
                       'PC_ugL':'PC',
                       'PC_RFU':'PC (RFU)',
                       'pH':'pH'}
+
+solute_pretty = {"DO_mgL":"DO (mg/L)",
+                 "SpC_uScm":"SpC (µS/cm)",
+                 "Turb_FNU":"Turbidity (FNU)",
+                 "WTemp_C":"Temp ($^{o}$C)",
+                 "NO3_mgNL":"NO$_{3}$-N (mg/L)",
+                 "fDOM_QSU":"fDOM (QSU)"
+                }
