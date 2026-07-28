@@ -26,7 +26,6 @@ params_pretty_dict = {'WTemp_C':'Temp',
                       'PC_RFU':'PC (RFU)',
                       'pH':'pH'}
 
-solutes = ['SpC_uScm', 'DO_mgL', 'Turb_FNU', 'WTemp_C', 'NO3_mgNL', 'fDOM_QSU']
 solute_pretty = {"DO_mgL":"DO (mg/L)",
                  "SpC_uScm":"SpC (µS/cm)",
                  "Turb_FNU":"Turbidity (FNU)",
@@ -34,12 +33,3 @@ solute_pretty = {"DO_mgL":"DO (mg/L)",
                  "NO3_mgNL":"NO$_{3}$-N (mg/L)",
                  "fDOM_QSU":"fDOM (QSU)"
                 }
-    
-PARAM_COLORS = {
-    'DO_mgL':    {'fill': '#FEDCBB', 'edge': '#7F2704'}, 
-    'SpC_uScm':  {'fill': '#E2EDF8', 'edge': '#08306B'},
-    'Turb_FNU':  {'fill': '#CEECC8', 'edge': '#00431A'},
-    'WTemp_C':   {'fill': '#DADAEB', 'edge': '#3F007D'},  # Purples
-    'NO3_mgNL':  {'fill': '#FEE0D2', 'edge': '#67000D'},  # Reds
-    'fDOM_QSU':  {'fill': '#D9F0A3', 'edge': '#238443'},  # YlGn
-}
