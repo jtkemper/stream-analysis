@@ -10,21 +10,6 @@ discharge_filepath = INPUT_filepath + "08_streamflow_discharge/"
 landuse_filepath = INPUT_filepath + "06_dynamic_lulc/"
 OUTPUT_filepath = "../OUTPUT/"
 
-params_pretty_dict = {'WTemp_C':'Temp',
-                      'DO_mgL':'DO',
-                      'SpC_uScm':'SpC',
-                      'Turb_FNU':'Turb. (FNU)',
-                      'Turb_NTU':'Turb. (NTU)',
-                      'NO3_mgNL':'NO3',
-                      'fDOM_QSU':'fDOM (QSU)',
-                      'fDOM_RFU':'fDOM (RFU)',
-                      'DOC_mgL':'DOC',
-                      'PO4_mgPL':'PO4',
-                      'Chla_ugL':'Chla',
-                      'Chla_RFU':'Ch;a (RFU)',
-                      'PC_ugL':'PC',
-                      'PC_RFU':'PC (RFU)',
-                      'pH':'pH'}
 
 solutes = ['SpC_uScm', 'DO_mgL', 'Turb_FNU', 'WTemp_C', 'NO3_mgNL', 'fDOM_QSU']
 solute_pretty = {"DO_mgL":"DO (mg/L)",
@@ -36,10 +21,10 @@ solute_pretty = {"DO_mgL":"DO (mg/L)",
                 }
     
 PARAM_COLORS = {
-    'DO_mgL':    {'fill': '#FEDCBB', 'edge': '#7F2704'}, 
-    'SpC_uScm':  {'fill': '#E2EDF8', 'edge': '#08306B'},
-    'Turb_FNU':  {'fill': '#CEECC8', 'edge': '#00431A'},
-    'WTemp_C':   {'fill': '#DADAEB', 'edge': '#3F007D'},  # Purples
-    'NO3_mgNL':  {'fill': '#FEE0D2', 'edge': '#67000D'},  # Reds
-    'fDOM_QSU':  {'fill': '#D9F0A3', 'edge': '#238443'},  # YlGn
+    'DO_mgL':    {'fill': '#FEDCBB', 'edge': '#7F2704', 'cmap':'Oranges'}, 
+    'SpC_uScm':  {'fill': '#E2EDF8', 'edge': '#08306B', 'cmap':'Blues'}, 
+    'Turb_FNU':  {'fill': '#CEECC8', 'edge': '#00431A', 'cmap':'Greens'}, 
+    'WTemp_C':   {'fill': '#DADAEB', 'edge': '#3F007D', 'cmap':'Purples'},
+    'NO3_mgNL':  {'fill': '#FEE0D2', 'edge': '#67000D', 'cmap':'Reds'},
+    'fDOM_QSU':  {'fill': '#D9F0A3', 'edge': '#238443', 'cmap':'YlGn'},
 }
